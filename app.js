@@ -23,38 +23,69 @@ function changePlayerChoiceCase(userChoice){
 function playRound(playerChoice, computerChoice){
 
     if(playerChoice===computerChoice){
-        console.log("Draw!!!")
+        playerScore++
+        computerScore++
+        return "Draw!!!";
     }
     
     else if(playerChoice=="Rock" && computerChoice=="Scissors"){
-        console.log("You Win! Rock beats Scissors")
+        playerScore++
+        return "You Win! Rock beats Scissors";
     }
 
     else if(playerChoice=="Scissors" && computerChoice=="Rock"){
-        console.log("You Lose! Rock beats Scissors")
+        computerScore++
+        return "You Lose! Rock beats Scissors";
     }
 
     else if(playerChoice=="Paper" && computerChoice=="Rock"){
-        console.log("You Win! Paper beats Rock")
+        playerScore++
+        return "You Win! Paper beats Rock";
     }
 
     else if(playerChoice=="Rock" && computerChoice=="Paper"){
-        console.log("You Lose! Paper beats Rock")
+        computerScore++
+        return "You Lose! Paper beats Rock";
     }
 
     else if(playerChoice=="Scissors" && computerChoice=="Paper"){
-        console.log("You Win! Scissors beats Paper")
+        playerScore++
+        return "You Win! Scissors beats Paper";
     }
 
     else if(playerChoice=="Paper" && computerChoice=="Scissors"){
-        console.log("You Lose! Scissors beats Paper")
+        computerScore++
+        return "You Lose! Scissors beats Paper";
     }
     else{
-        console.log("Invalid input,chose from rock paper scissors")
+        return "Invalid input,chose from rock paper scissors";
     }
 };
 
-playRound(getPlayerChoice(),getComputerChoice());
+//create a function that plays 5 rounds and keep scores and report the loser or winner at the end.
 
-//create a function that plays 5 rounds and keep scores and report the loser or winner.
+let playerScore=0;
+let computerScore=0;
 
+function game(){
+  for(let i=1; i<=5; i++){
+   playRound(getPlayerChoice(),getComputerChoice())
+  }
+  return getWinner(playerScore,computerScore);
+};
+
+//check for winner
+
+function getWinner(playerScore,computerScore){
+    if(playerScore > computerScore){
+        return `you won`
+    }
+    else if(playerScore === computerScore){
+         return `its a draw` 
+    }
+    else{
+        return `you lose`
+    }
+};
+
+console.log(game())
