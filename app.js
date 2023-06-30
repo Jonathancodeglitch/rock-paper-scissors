@@ -10,7 +10,11 @@ function getComputerChoice(){
 //create a function that get user choice
 function getPlayerChoice(){
     let userChoice=prompt("Rock,Paper,Scissors");
-    return changePlayerChoiceCase(userChoice)
+    if( changePlayerChoiceCase(userChoice)=="Rock" ||  changePlayerChoiceCase(userChoice)=="Paper" ||  changePlayerChoiceCase(userChoice)== "Scissors"){
+        return changePlayerChoiceCase(userChoice);
+    }else{
+        return getPlayerChoice()
+    }
 };
 
 //make user choice case sensitive
@@ -58,6 +62,7 @@ function playRound(playerChoice, computerChoice){
         return "You Lose! Scissors beats Paper";
     }
     else{
+        computerScore++
         return "Invalid input,chose from rock paper scissors";
     }
 };
@@ -69,7 +74,7 @@ let computerScore=0;
 
 function game(){
   for(let i=1; i<=5; i++){
-   playRound(getPlayerChoice(),getComputerChoice())
+    console.log(playRound(getPlayerChoice(),getComputerChoice()));
   }
   return getWinner(playerScore,computerScore);
 };
