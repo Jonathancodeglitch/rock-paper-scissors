@@ -164,23 +164,8 @@ header{
     to,100% {transform:scale(0.80);}
   }
 
-@-moz-keyframes grow  /* Firefox */
-{
-    from,0% {transform:scale(1);}
-    to,100%{transform:scale(0.80);}
-  
-}
+
 @-webkit-keyframes grow  /* Safari and Chrome */
-{
-    from,0% {transform:scale(1);}
-    to,100%{transform:scale(0.80);}
-}
-@-o-keyframes grow  /* Opera */
-{
-    from,0% {transform:scale(1);}
-    to,100%{transform:scale(0.80);}
-}
-@-ms-keyframes grow  /* IE */
 {
     from,0% {transform:scale(1);}
     to,100%{transform:scale(0.80);}
@@ -193,10 +178,7 @@ header{
     margin: 0 auto;
     border-radius: 50%;
     animation: grow 1s infinite;
-    -moz-animation: grow 1s infinite;    /* Firefox */
     -webkit-animation: grow 1s infinite; /* Safari and Chrome */
-    -o-animation:grow 1s infinite ;    /* Opera */
-    -ms-animation:grow 1s infinite;    /* IE */
 }
 
 /* winner-container */

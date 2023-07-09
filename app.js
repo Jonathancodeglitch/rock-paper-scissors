@@ -77,7 +77,7 @@ function displayRound(userChoice, houseChoice) {
   displayGameContainer.innerHTML = html;
 
   let shadow = document.querySelector('.shadow');
-  showHouseChoice(shadow, houseChoice); //change house shadow to house choice
+ showHouseChoice(shadow, houseChoice); //change house shadow to house choice
 }
 
 function showHouseChoice(shadow, houseChoice) {
