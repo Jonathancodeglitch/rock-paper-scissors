@@ -180,7 +180,6 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top:60px;
-    margin-bottom:35px;
 }
 
 .game-result{
@@ -204,6 +203,7 @@ header{
     letter-spacing: 3px;
     margin-top:15px;
     cursor: pointer;
+    margin-bottom:35px;
 }
 
 /* rule */
