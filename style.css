@@ -160,30 +160,30 @@ header{
 }
 
 @keyframes grow {
-    0% {scale:1;}
-    100% {scale:0.80;}
+    from,0% {transform: scale(1);}
+    to,100% {transform:scale(0.80);}
   }
 
 @-moz-keyframes grow  /* Firefox */
 {
-    0% {scale:1;}
-    100% {scale:0.80;}
+    from,0% {transform:scale(1);}
+    to,100%{transform:scale(0.80);}
   
 }
 @-webkit-keyframes grow  /* Safari and Chrome */
 {
-    0% {scale:1;}
-    100% {scale:0.80;}
+    from,0% {transform:scale(1);}
+    to,100%{transform:scale(0.80);}
 }
 @-o-keyframes grow  /* Opera */
 {
-    0% {scale:1;}
-    100% {scale:0.80;}
+    from,0% {transform:scale(1);}
+    to,100%{transform:scale(0.80);}
 }
 @-ms-keyframes grow  /* IE */
 {
-    0% {scale:1;}
-    100% {scale:0.80;}
+    from,0% {transform:scale(1);}
+    to,100%{transform:scale(0.80);}
 }
 
 .round .shadow{
@@ -194,7 +194,7 @@ header{
     border-radius: 50%;
     animation: grow 1s infinite;
     -moz-animation: grow 1s infinite;    /* Firefox */
-    -webkit-animation: grow; /* Safari and Chrome */
+    -webkit-animation: grow 1s infinite; /* Safari and Chrome */
     -o-animation:grow 1s infinite ;    /* Opera */
     -ms-animation:grow 1s infinite;    /* IE */
 }
