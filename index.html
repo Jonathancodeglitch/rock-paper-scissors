@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    
-</body>
+  <!-- home page -->
+  <div class="home-page container">
+    <header>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="score">
+        <div class="score_header">SCORE</div>
+        <div class="score_text">0</div>
+      </div>
+    </header>
+    <!-- selection container begins-->
+    <div class="selection-container">
+      <div class="default-game-option">
+        <div class="paper game-option default-option" data-id="paper">
+        </div>
+        <div class="scissors game-option default-option" data-id="scissors">
+          
+        </div>
+        <div class="rock game-option default-option" data-id="rock">
+        </div> 
+      </div>
+    </div>
+    <!--selection container ends  -->
+    <!-- winner container begins -->
+    <div class="game-result-container">
+      <p class="game-result"></p>
+    </div>
+    <!-- winner container ends -->
+    <div class="rule-btn">Rules</div>
+  </div>
+  <!-- home page ends -->
+    <!-- rule modal begins -->
+  <div class="rule-modal-container">
+    <div class="rule-modal">
+      <div class="rule-modal-header">
+        <span class="header_text">RULES</span>
+        <img style="display: none;" class="close-icon-lg close-icon" src="./images/icon-close.svg" alt="icon">
+      </div>
+      <div class="rule-img">
+        <img src="./images/image-rules.svg" alt="game rules">
+      </div>
+      <div class="close-icon-sm close-icon">
+        <img src="./images/icon-close.svg" alt="icon">
+      </div>
+    </div>
+  </div>
+    <!-- rule modal ends-->
     <script src="./app.js"></script>
+</body>
 </html>
