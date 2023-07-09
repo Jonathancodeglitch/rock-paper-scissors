@@ -1,8 +1,4 @@
-//they should be able to play game on click
-//create a ui that always a user to choose by clicking a button
-// on click buttion should play a round;
-// display a winner
-//display the running score and annoce the winner of the game once a player reaches 5 point
+
 
 let rps = document.querySelectorAll('.default-option');
 let gameResult = document.querySelector('.game-result');
@@ -175,68 +171,4 @@ closeRulePageBtn.forEach((closeRulePageBtn) => {
   closeRulePageBtn.addEventListener('click', closeRulePage);
 });
 
-/* 
 
-
-
-
-//create a function that takes the computer and user chioce called playRound, playRound should look for a winner and return a string
-
-
-
-//create a function that plays 5 rounds and keep scores and report the loser or winner at the end.
-
-let playerScore = 0;
-let computerScore = 0;
-
-function game() {
-  for (let i = 1; i <= 5; i++) {
-    console.log(playRound(getPlayerChoice(), getComputerChoice()));
-  }
-  return getWinner(playerScore, computerScore);
-}
-
-//check for winner
-
-function getWinner(playerScore, computerScore) {
-  if (playerScore > computerScore) {
-    return `you won`;
-  } else if (playerScore === computerScore) {
-    return `its a draw`;
-  } else {
-    return `you lose`;
-  }
-}
-
-console.log(game());
-
-
-
- */
-
-// let round=document.createElement("div");
-// round.classList.add("round");
-
-/* player element */
-// let playerChoiceContainer=document.createElement("div");
-// playerChoiceContainer.classList.add("player-choice-container");
-// let playerChoice=document.createElement("div");
-//playerChoice.classList.add("player-choice","game-option",`${playerChoice}`)
-//let playerText=document.createElement("p");
-// playerText.textContent="YOU PICKED"
-
-/* append player element */
-//playerChoiceContainer.append(playerChoice,playerText)
-
-/* the house element */
-// let houseChoiceContainer=document.createElement("div");
-// houseChoiceContainer.classList.add("house-choice-container");
-// let shadow=document.createElement("div");
-// shadow.classList.add("shadow")
-//let shadowText=document.createElement("p");
-//shadowText.textContent="THE HOUSE PICKED";
-
-/* append house element */
-// houseChoiceContainer.append(shadow,shadowText);
-
-//displayRoundContainer.append(playerChoiceContainer,houseChoiceContainer)
