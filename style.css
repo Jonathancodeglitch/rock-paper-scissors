@@ -164,6 +164,28 @@ header{
     to {scale:0.80;}
   }
 
+@-moz-keyframes grow  /* Firefox */
+{
+    from {scale:1;}
+    to {scale:0.80;}
+  
+}
+@-webkit-keyframes grow  /* Safari and Chrome */
+{
+    from {scale:1;}
+    to {scale:0.80;}
+}
+@-o-keyframes grow  /* Opera */
+{
+    from {scale:1;}
+    to {scale:0.80;}
+}
+@-ms-keyframes grow  /* IE */
+{
+    from {scale:1;}
+    to {scale:0.80;}
+}
+
 .round .shadow{
     width:130px;
     height:130px;
